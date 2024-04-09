@@ -11,7 +11,7 @@ export const useSocket = () => {
 export const SocketProvider = (props) => {
 
     // const socket = useMemo(() => io("https://video-call-nodejs.onrender.com/"), []);
-    const socket = useMemo(() => io("https://video-call-node-q0h8.onrender.com:10000/"), []);
+    const socket = useMemo(() => io("https://video-call-node-q0h8.onrender.com/"), []);
     return (
         <SocketContext.Provider value={socket}>
             {props.children}
